@@ -1,24 +1,6 @@
-# README
+# GitHub Repository Search
+A simple web application built with Ruby on Rails to search and display public repositories from GitHub based on a user-provided search term.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Features
+Search GitHub repositories by name or keyword.
+View a list of matching repositories with links to their GitHub pages.
