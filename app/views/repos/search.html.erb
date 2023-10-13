@@ -1,0 +1,18 @@
+<h1>Search GitHub Repositories</h1>
+
+<form action="/repos/search" method="get">
+  <input type="text" name="query" placeholder="Enter search term..." value="<%= params[:query] %>">
+  <input type="submit" value="Search">
+</form>
+
+<% if @repos %>
+  <ul>
+    <% @repos.each do |repo| %>
+      <li>
+        <a href="<%= repo[:html_url] %>" target="_blank">
+          <%= repo[:full_name] %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
