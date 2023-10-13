@@ -1,9 +1,9 @@
 <h1>Search GitHub Repositories</h1>
 
-<form action="/repos/search" method="get">
-  <input type="text" name="query" placeholder="Enter search term..." value="<%= params[:query] %>">
-  <input type="submit" value="Search">
-</form>
+<%= form_with url: '/repos/search', method: :get, local: true do |form| %>
+  <%= form.text_field :query, placeholder: "Enter search term...", value: params[:query] %>
+  <%= form.submit "Search" %>
+<% end %>
 
 <% if @repos %>
   <ul>
